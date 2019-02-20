@@ -1,0 +1,6 @@
+<h1> The People You Know </h1>
+<p><%= link_to 'Add A New Person', new_person_path %></p>
+
+<% @people.each do |person| %>
+  <h2><%= link_to "#{person.full_name}", person_path(person) %></h2>
+<% end%>

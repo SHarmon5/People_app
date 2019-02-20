@@ -1,0 +1,11 @@
+<h1><%= "#{@person.full_name}" %></h1>
+
+<h4><%= "First name: #{@person.first_name}" %></h4>
+<h4><%= "Last name: #{@person.last_name}" %></h4>
+<h4><%= "Hair color: #{@person.hair_color}" %></h4>
+<h4><%= "Eye color: #{@person.eye_color}" %></h4>
+<h4><%= "Age: #{@person.age}" %></h4>
+<h4><%= "Gender: #{@person.gender}" %></h4>
+<h4><%= "Alive: #{@person.alive}" %></h4>
+<%= link_to 'Edit Person', edit_person_path(@person)%> 
+<%= link_to 'Back to Home Page', people_path %>
