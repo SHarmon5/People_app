@@ -1,5 +1,6 @@
 class Person < ApplicationRecord
 
+
   def self.by_first_name
     order(:first_name)
   end
